@@ -1,21 +1,18 @@
-import cat1 from '../assets/cat1.jpeg'
-import cat2 from '../assets/cat2.jpeg'
-import cat3 from '../assets/cat3.jpeg'
-import cat4 from '../assets/cat4.jpeg'
+
 import phone from '../assets/phone-icon.png'
 import mail from '../assets/mail-icon.png'
-export default function Contact(){
+export default function Contact(props){
     return(
         <article className='contact-card'>
-            <img src={cat1}></img>
-            <h1>This is Cat1</h1>
-            <div>
+            <img src={props.img} alt="catimg"></img>
+            <h1>{props.name}</h1>
+            <div className='info-group'>
                 <img className = " phone-icon"src={phone}></img>
-                <p>1234567890</p>
+                <p>{props.phone}</p>
             </div>
-            <div>
+            <div className='info-group'>
                 <img className="mail-icon"src={mail}></img>
-                <p>sample@gmail.com</p>
+                <p>{props.mail}</p>
             </div>
         </article>
     )

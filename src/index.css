@@ -3,25 +3,69 @@
 }
 body{
   margin:0;
+  display: flex;
+  align-items: center;
   font-family:  Calibri, 'Trebuchet MS', sans-serif;
-  background-color: black;
+  background-color: rgba(220, 227, 234, 0.909);
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.tit {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+  color: #2B283A;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 20px 0;
 }
 .contacts{
+  margin-top: 40px;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 40px;
 }
 .contact-card{
-  padding:20px;
-  box-shadow: 1px 1px 8px rgba(0,0,0,0.25);
-  background-color: white;
+    flex-basis: 234px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    padding-bottom: 8px;
+    background-color: rgb(225, 238, 159);
 }
-article > div{
+.contact-card > h1{
+    font-weight: 700;
+    font-size: 24px;
+    margin-top : 10px;
+    margin-bottom:5px;
+    text-align: center;
+
+}
+.contact-card > img {
+  width: 300px;
+  height:auto;
+  max-height:180px;
+  border-radius: 5px;
+  object-fit:cover;
+}
+
+.info-group {
   display: flex;
   align-items: center;
-  margin-top:-10px;
 }
-.phone-icon,.mail-icon{
-  margin-right: 20px;
+
+.info-group > img {
+  height: 11px;
+  margin-right: 8px;
+}
+
+.info-group > p {
+  margin-block: 3px;
+  font-size: 13px;
+  color: #2B283A;
 }
