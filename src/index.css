@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  font-family:  Calibri, 'Trebuchet MS', sans-serif;
+  background-color: black;
+}
+.contacts{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.contact-card{
+  padding:20px;
+  box-shadow: 1px 1px 8px rgba(0,0,0,0.25);
+  background-color: white;
+}
+article > div{
+  display: flex;
+  align-items: center;
+  margin-top:-10px;
+}
+.phone-icon,.mail-icon{
+  margin-right: 20px;
+}
