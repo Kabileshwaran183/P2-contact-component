@@ -1,0 +1,8 @@
+creation of components (contact card)
+
+using function contact(props){
+
+<> ...   <p> {props.name} </P>  </>
+}
+
+cards :  img, name , contact , mail
